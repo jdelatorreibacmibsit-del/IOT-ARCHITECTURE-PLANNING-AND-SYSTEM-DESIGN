@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="9BubK0CZpScPppv-LUcL">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="presentation" parent="1" style="swimlane;rounded=1;html=1;" value="PRESENTATION LAYER" vertex="1">
+          <mxGeometry height="130" width="800" x="200" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="dashboard" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Web Dashboard&#xa;Attendance Monitoring" vertex="1">
+          <mxGeometry height="60" width="180" x="280" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="admin" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Administrator Portal&#xa;Reports &amp; Management" vertex="1">
+          <mxGeometry height="60" width="180" x="650" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="database" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;" value="DATABASE LAYER&#xa;&#xa;PostgreSQL&#xa;Student &amp; Attendance Records" vertex="1">
+          <mxGeometry height="100" width="200" x="1125" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="cloud" parent="1" style="swimlane;rounded=1;html=1;" value="CLOUD / APPLICATION LAYER" vertex="1">
+          <mxGeometry height="140" width="800" x="185" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="api" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="REST API&#xa;Visual Studio C# Application" vertex="1">
+          <mxGeometry height="70" width="220" x="285" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="nodered" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Node-RED&#xa;IoT Data Processing" vertex="1">
+          <mxGeometry height="70" width="180" x="685" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="edge" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="EDGE / GATEWAY LAYER&#xa;&#xa;Raspberry Pi Gateway&#xa;MQTT Broker" vertex="1">
+          <mxGeometry height="100" width="250" x="1075" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="communication" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="COMMUNICATION LAYER&#xa;&#xa;Wi-Fi&#xa;MQTT&#xa;HTTP/HTTPS" vertex="1">
+          <mxGeometry height="110" width="250" x="1100" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="device" parent="1" style="swimlane;rounded=1;html=1;" value="DEVICE LAYER" vertex="1">
+          <mxGeometry height="150" width="900" x="135" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="esp32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="ESP32&#xa;Microcontroller" vertex="1">
+          <mxGeometry height="60" width="150" x="215" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="fingerprint" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Fingerprint Sensor&#xa;Biometric Scanner" vertex="1">
+          <mxGeometry height="60" width="180" x="455" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="camera" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Camera / CCTV&#xa;(Optional)" vertex="1">
+          <mxGeometry height="60" width="150" x="745" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="line1" edge="1" parent="1" source="fingerprint" target="communication">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line2" edge="1" parent="1" source="communication" target="edge">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line3" edge="1" parent="1" source="edge" target="cloud">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line4" edge="1" parent="1" source="cloud" target="database">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line5" edge="1" parent="1" source="database" target="presentation">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

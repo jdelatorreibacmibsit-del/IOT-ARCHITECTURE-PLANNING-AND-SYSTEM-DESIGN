@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="jloIKIpAzjPv0nE6FeyX">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="student" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Student" vertex="1">
+          <mxGeometry height="70" width="120" x="70" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="system" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;fontStyle=1;" value="BIOMETRIC ATTENDANCE SYSTEM&#xa;WITH VISUAL STUDIO&#xa;INTEGRATION" vertex="1">
+          <mxGeometry height="180" width="280" x="320" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="sensor" parent="1" style="shape=process;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Fingerprint&#xa;Sensor" vertex="1">
+          <mxGeometry height="70" width="150" x="750" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cloud" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Cloud Database" vertex="1">
+          <mxGeometry height="80" width="150" x="800" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="vs" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Visual Studio&#xa;Application" vertex="1">
+          <mxGeometry height="80" width="170" x="680" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="student" style="endArrow=classic;html=1;" target="system" value="Fingerprint Scan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="system" style="endArrow=classic;html=1;" target="student" value="Attendance Status">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="sensor" style="endArrow=classic;html=1;" target="system" value="Biometric Data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="system" style="endArrow=classic;html=1;" target="cloud" value="Attendance Logs">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="cloud" style="endArrow=classic;html=1;" target="system" value="Student Records">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="system" style="endArrow=classic;html=1;" target="vs" value="Attendance Data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

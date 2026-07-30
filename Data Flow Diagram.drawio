@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="8wfnfpe5WCVwmnm6K0EP">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="student" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Student&#xa;(Fingerprint Input)" vertex="1">
+          <mxGeometry height="70" width="160" x="70" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="sensor" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Biometric Sensor&#xa;(IoT Device)" vertex="1">
+          <mxGeometry height="70" width="160" x="240" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="processing" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Processing&#xa;Visual Studio C# Application&#xa;- Verify Identity&#xa;- Record Attendance" vertex="1">
+          <mxGeometry height="100" width="200" x="360" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="database" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;" value="Database&#xa;Student &amp; Attendance Records" vertex="1">
+          <mxGeometry height="100" width="160" x="470" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dashboard" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Dashboard&#xa;Monitoring &amp; Reports" vertex="1">
+          <mxGeometry height="80" width="200" x="780" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="notification" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Notifications&#xa;Students &amp; Administrators" vertex="1">
+          <mxGeometry height="80" width="200" x="700" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="line1" edge="1" parent="1" source="student" target="sensor" value="Sensor Data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line2" edge="1" parent="1" source="sensor" target="processing" value="Fingerprint Data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line3" edge="1" parent="1" source="processing" target="database" value="Attendance Data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line4" edge="1" parent="1" source="database" target="dashboard" value="Attendance Information">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line5" edge="1" parent="1" source="dashboard" target="notification" value="Alerts / Updates">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
